@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大黒屋【公式】｜ブランド品・時計・宝飾品等の買取・販売・質業</title>
+
+    <meta name="description" content="株式会社大黒屋が運営する店舗一覧ページです。都道府県と営業内容でブランド品販売・買取・質屋店舗を探せます。法人番号 5040001022381。">
+    <meta name="keywords" content="大黒屋,店舗一覧,株式会社大黒屋,ブランド品販売,ブランド品買取,質屋,法人番号5040001022381">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="大黒屋">
+    <meta property="og:title" content="店舗一覧｜質屋大黒屋（株式会社大黒屋）">
+    <meta property="og:description" content="株式会社大黒屋が運営する店舗一覧ページです。都道府県と営業内容でブランド品販売・買取・質屋店舗を探せます。法人番号 5040001022381。">
+    <meta property="og:image" content="./img/logo.png">
+    <meta property="og:url" content="./index.html">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="canonical" href="./index.html">
+    <link href="./store/icon" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        daikoYellow: '#ffeb00', 
+                        daikoYellowHover: '#E6C000',
+                        daikoDark: '#1E2229'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; scroll-behavior: smooth; }
+        /* モバイルメニューの展開アニメーション用 */
+        #mobile-menu {
+            transition: all 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        #mobile-menu.open {
+            max-height: 300px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-daikoDark antialiased">
+
+    <header class="fixed w-full z-50 bg-daikoYellow border-b-2 border-daikoYellowHover shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between relative">
+            <div class="flex items-center gap-6">
+                <a href="#" class="flex items-center gap-3">
+                    <div class="leading-tight">
+                        <img src="./logo.png" width="100" alt="DAIKOKUYA">
+                    </div>
+                </a>
+                <nav class="hidden md:flex items-center gap-6 border-l border-amber-500/30 pl-6 text-xs font-bold tracking-wider text-slate-900">
+                    <a href="./index.html#mall" class="hover:text-amber-900 transition-colors py-1">オンラインモール一覧</a>
+                    <a href="./shops.html" class="hover:text-amber-900 transition-colors py-1">店舗一覧</a>
+                    <a href="./index.html#corporate" class="hover:text-amber-900 transition-colors py-1">会社概要</a>
+                </nav>
+            </div>
+
+            <button id="menu-btn" class="block md:hidden p-2 text-slate-900 hover:text-amber-900 focus:outline-none" aria-label="メニューを開閉">
+                <svg id="menu-icon" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path id="path1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16"></path>
+                    <path id="path2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 12h16"></path>
+                    <path id="path3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="block md:hidden bg-daikoYellow border-t border-amber-400 shadow-inner">
+            <nav class="flex flex-col px-6 py-4 gap-4 text-sm font-bold tracking-wider text-slate-900">
+                <a href="./index.html#mall" class="mobile-link hover:text-amber-900 transition-colors py-1 border-b border-amber-400/50">オンラインモール一覧</a>
+                <a href="./shops.html" class="mobile-link hover:text-amber-900 transition-colors py-1 border-b border-amber-400/50">店舗一覧</a>
+                <a href="./index.html#corporate" class="mobile-link hover:text-amber-900 transition-colors py-1">会社概要</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- デザイン調整・統合されたヒーローセクション -->
+    <section class="relative pt-24 pb-20 md:py-32 bg-cover bg-center bg-no-repeat border-b border-slate-200" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80');">
+        <!-- 背景のグラデーションマスク（文字の可読性を高めるため、白の不透明度を微調整） -->
+        <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/90 to-white/60 md:to-white/30 z-0"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <!-- フレックス配置でロゴとテキストをスタイリッシュに統合 -->
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8 max-w-5xl">
+                <!-- 修正後（例：モバイルで w-32=128px、PCで w-48=192px に拡大） -->
+                <div class="shrink-0 bg-white p-3 rounded-xl shadow-md border border-slate-100 flex items-center justify-center">
+                    <img src="./daikoku.png" width="200" alt="DAIKOKUYA" class="w-64 md:w-32 h-auto object-contain">
+                </div>
+                <!-- テキストコンテンツブロック -->
+                <div class="space-y-4 text-center md:text-left">
+                    <h1 class="text-xl sm:text-2xl md:text-3xl font-black leading-snug tracking-tight text-slate-900">
+                        <span class="block text-slate-800 font-bold border-l-4 border-daikoYellow pl-3 md:pl-4 inline-block text-left">
+                            ブランド品・時計・宝飾品・ジュエリー・洋服などの買取および販売、ならびに質業
+                        </span>
+                    </h1>
+                    <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed max-w-3xl text-left mx-auto md:mx-0">
+                        大黒屋は、ブランド品・時計・宝飾品・ジュエリー・洋服などの買取および販売、ならびに質業を展開しています。長年にわたり積み重ねてきた信頼と実績をもとに、お客様に安心してご利用いただける service を提供しています。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="bg-gradient-to-r from-slate-900 via-stone-800 to-slate-950 py-10 border-b-4 border-daikoYellow relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,213,0,0.15),transparent_45%)]"></div>
+        <div class="max-w-6xl mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left space-y-2">
+                <div class="inline-flex items-center gap-2 bg-daikoYellow text-slate-950 text-[11px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
+                    <span>Valuable Service</span>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-black text-white tracking-wide leading-tight">
+<!--                     ご自宅で待つだけ、プロがその場で高額査定。<br class="hidden sm:block"> -->
+                    ご自宅で待つだけ、プロがその場で高額査定。<br>
+                    大黒屋の「<span class="text-daikoYellow">安心 出張買取</span>」
+                </h2>
+                <p class="text-stone-300 text-xs md:text-sm font-medium">
+                    お品物が多くて運べない方や、お近くに店舗がない方に最適。<br>
+                    専門の査定スタッフがお客様のご自宅までお伺いいたします。
+                </p>
+            </div>
+            <div class="flex items-center gap-4 w-full md:w-auto justify-center md:justify-end">
+                <a href="./recycle.html" target="_blank" class="w-full sm:w-auto text-center bg-daikoYellow hover:bg-daikoYellowHover text-slate-950 font-black text-sm px-10 py-4 rounded-xl shadow-md shadow-daikoYellow/10 transition-all duration-300 transform hover:-translate-y-0.5 whitespace-nowrap">
+<!--                    出張買取を申し込む-->
+                    出張買取について
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+<section class="py-16 bg-cover bg-center bg-no-repeat relative border-b border-slate-200" id="mall" style="background-image: url('shinjuku.jpg');">
+    <!-- 背景画像の上に薄い黒を被せ、画像のノイズを抑えて文字を見やすくする -->
+    <div class="absolute inset-0 bg-slate-900/40 z-0"></div>
+
+    <div class="max-w-5xl mx-auto px-4 relative z-10">
+        <div class="text-center mb-12">
+            <span class="text-daikoYellow text-xs font-black tracking-widest uppercase block mb-1">Online Stores</span>
+            <h2 class="text-2xl font-black text-white">オンラインモール一覧</h2>
+            <div class="w-12 h-1 bg-daikoYellow mx-auto mt-3"></div>
+        </div>
+        
+        <!-- カルーセル外枠コンテナ -->
+        <div class="relative max-w-4xl mx-auto group px-8 md:px-4">
+            
+            <!-- スライダー本体 -->
+            <div class="overflow-hidden px-2 py-1">
+                <div id="mall-slides" class="flex gap-6 transition-transform duration-500 ease-out w-full">
+                    
+                    <!-- 1. 楽天市場 -->
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 flex flex-col justify-between min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] relative overflow-hidden group/card shadow-sm transition-colors duration-300 hover:border-daikoYellow">
+                        <div class="absolute right-[-15px] bottom-[-30px] text-[130px] font-black text-slate-900/[0.15] select-none pointer-events-none transition-transform duration-500 group-hover/card:scale-110 font-sans leading-none">R</div>
+                        
+                        <div class="relative z-10">
+                            <div class="w-8 h-8 bg-red-600 text-white rounded-lg flex items-center justify-center font-black text-sm mb-3">R</div>
+                            <h3 class="font-black text-base text-slate-900 mb-0.5">楽天市場</h3>
+                            <p class="text-[11px] font-mono text-slate-400 mb-3">rakuten.co.jp</p>
+                            <p class="text-xs text-slate-600 leading-relaxed">楽天ポイントが貯まる・使える！お買い物マラソンなどのイベントも大注目。</p>
+                        </div>
+                        <a href="https://rakuten.co.jp" target="_blank" rel="noopener" class="relative z-10 mt-5 flex items-center justify-center bg-white hover:bg-slate-100 border border-slate-300 text-xs font-bold py-2.5 rounded text-slate-700 transition-colors shadow-sm">ショップを開く</a>
+                    </div>
+
+                    <!-- 2. ラクマ -->
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 flex flex-col justify-between min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] relative overflow-hidden group/card shadow-sm transition-colors duration-300 hover:border-daikoYellow">
+                        <div class="absolute right-[-15px] bottom-[-30px] text-[130px] font-black text-slate-900/[0.15] select-none pointer-events-none transition-transform duration-500 group-hover/card:scale-110 font-sans leading-none">f</div>
+                        
+                        <div class="relative z-10">
+                            <div class="w-8 h-8 bg-cyan-500 text-white rounded-lg flex items-center justify-center font-black text-sm mb-3">f</div>
+                            <h3 class="font-black text-base text-slate-900 mb-0.5">ラクマ</h3>
+                            <p class="text-[11px] font-mono text-slate-400 mb-3">fril.jp</p>
+                            <p class="text-xs text-slate-600 leading-relaxed">楽天グループのフリマアプリ。限定クーポンや最強鑑定サービスで安心取引。</p>
+                        </div>
+                        <a href="https://fril.jp" target="_blank" rel="noopener" class="relative z-10 mt-5 flex items-center justify-center bg-white hover:bg-slate-100 border border-slate-300 text-xs font-bold py-2.5 rounded text-slate-700 transition-colors shadow-sm">ショップを開く</a>
+                    </div>
+
+                    <!-- 3. ヤフーショッピング -->
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 flex flex-col justify-between min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] relative overflow-hidden group/card shadow-sm transition-colors duration-300 hover:border-daikoYellow">
+                        <div class="absolute right-[-15px] bottom-[-30px] text-[130px] font-black text-slate-900/[0.15] select-none pointer-events-none transition-transform duration-500 group-hover/card:scale-110 font-sans leading-none">Y</div>
+                        
+                        <div class="relative z-10">
+                            <div class="w-8 h-8 bg-red-500 text-white rounded-lg flex items-center justify-center font-black text-sm mb-3">Y</div>
+                            <h3 class="font-black text-base text-slate-900 mb-0.5">ヤフーショッピング</h3>
+                            <p class="text-[11px] font-mono text-slate-400 mb-3">shopping.yahoo.co.jp</p>
+                            <p class="text-xs text-slate-600 leading-relaxed">PayPayポイントが毎日貯まる！50%OFF以上のセールや限定クーポンも豊富。</p>
+                        </div>
+                        <a href="https://yahoo.co.jp" target="_blank" rel="noopener" class="relative z-10 mt-5 flex items-center justify-center bg-white hover:bg-slate-100 border border-slate-300 text-xs font-bold py-2.5 rounded text-slate-700 transition-colors shadow-sm">ショップを開く</a>
+                    </div>
+
+                    <!-- 4. メルカリ -->
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 flex flex-col justify-between min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] relative overflow-hidden group/card shadow-sm transition-colors duration-300 hover:border-daikoYellow">
+                        <div class="absolute right-[-15px] bottom-[-30px] text-[130px] font-black text-slate-900/[0.15] select-none pointer-events-none transition-transform duration-500 group-hover/card:scale-110 font-sans leading-none">m</div>
+                        
+                        <div class="relative z-10">
+                            <div class="w-8 h-8 bg-blue-500 text-white rounded-lg flex items-center justify-center font-black text-sm mb-3">m</div>
+                            <h3 class="font-black text-base text-slate-900 mb-0.5">メルカリ</h3>
+                            <p class="text-[11px] font-mono text-slate-400 mb-3">mercari.com</p>
+                            <p class="text-xs text-slate-600 leading-relaxed">国内最大のフリマアプリ。探していた掘り出し物や一点限りのレアアイテムをチェック。</p>
+                        </div>
+                        <a href="https://mercari.com" target="_blank" rel="noopener" class="relative z-10 mt-5 flex items-center justify-center bg-white hover:bg-slate-100 border border-slate-300 text-xs font-bold py-2.5 rounded text-slate-700 transition-colors shadow-sm">ショップを開く</a>
+                    </div>
+
+                    <!-- 5. Chrono24 -->
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 flex flex-col justify-between min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] relative overflow-hidden group/card shadow-sm transition-colors duration-300 hover:border-daikoYellow">
+                        <div class="absolute right-[-15px] bottom-[-30px] text-[130px] font-black text-slate-900/[0.15] select-none pointer-events-none transition-transform duration-500 group-hover/card:scale-110 font-sans leading-none">C</div>
+                        
+                        <div class="relative z-10">
+                            <div class="w-8 h-8 bg-slate-800 text-white rounded-lg flex items-center justify-center font-black text-sm mb-3">C</div>
+                            <h3 class="font-black text-base text-slate-900 mb-0.5">Chrono24</h3>
+                            <p class="text-[11px] font-mono text-slate-400 mb-3">chrono24.jp</p>
+                            <p class="text-xs text-slate-600 leading-relaxed">世界最大級の高級時計専門マーケットプレイス。グローバルな真贋鑑定で安心。</p>
+                        </div>
+                        <a href="https://chrono24.jp" target="_blank" rel="noopener" class="relative z-10 mt-5 flex items-center justify-center bg-white hover:bg-slate-100 border border-slate-300 text-xs font-bold py-2.5 rounded text-slate-700 transition-colors shadow-sm">ショップを開く</a>
+                    </div>
+
+                    <!-- 6. eBay -->
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 flex flex-col justify-between min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] relative overflow-hidden group/card shadow-sm transition-colors duration-300 hover:border-daikoYellow">
+                        <div class="absolute right-[-15px] bottom-[-30px] text-[130px] font-black text-slate-900/[0.15] select-none pointer-events-none transition-transform duration-500 group-hover/card:scale-110 font-sans leading-none">e</div>
+                        
+                        <div class="relative z-10">
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-black text-sm mb-3">e</div>
+                            <h3 class="font-black text-base text-slate-900 mb-0.5">eBay</h3>
+                            <p class="text-[11px] font-mono text-slate-400 mb-3">ebay.com</p>
+                            <p class="text-xs text-slate-600 leading-relaxed">世界中のバイヤーが集うグローバル通販。海外限定のブランド品や希少アイテムも。</p>
+                        </div>
+                        <a href="https://ebay.com" target="_blank" rel="noopener" class="relative z-10 mt-5 flex items-center justify-center bg-white hover:bg-slate-100 border border-slate-300 text-xs font-bold py-2.5 rounded text-slate-700 transition-colors shadow-sm">ショップを開く</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 常時表示ナビゲーションボタン -->
+            <button id="mall-prev" class="absolute top-1/2 left-0 md:-left-6 -translate-y-1/2 bg-slate-800 hover:bg-slate-900 text-white w-10 h-10 rounded-full flex items-center justify-center font-mono transition-all z-20 shadow-lg border border-slate-700">
+                &#10094;
+            </button>
+            <button id="mall-next" class="absolute top-1/2 right-0 md:-right-6 -translate-y-1/2 bg-slate-800 hover:bg-slate-900 text-white w-10 h-10 rounded-full flex items-center justify-center font-mono transition-all z-20 shadow-lg border border-slate-700">
+                &#10095;
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- オンラインモール一覧 カルーセル制御用JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const slidesContainer = document.getElementById('mall-slides');
+    const prevBtn = document.getElementById('mall-prev');
+    const nextBtn = document.getElementById('mall-next');
+    const cards = slidesContainer.children;
+    const totalCards = cards.length;
+    
+    let currentIndex = 0;
+    let autoPlayTimer = null; // 自動再生用のタイマー管理
+
+    function getVisibleCount() {
+        if (window.innerWidth >= 1024) return 3;
+        if (window.innerWidth >= 768) return 2;
+        return 1;
+    }
+
+    function updateSlider() {
+        const visibleCount = getVisibleCount();
+        const maxIndex = totalCards - visibleCount;
+
+        // インデックスの範囲制御
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+        if (currentIndex < 0) currentIndex = 0;
+
+        const cardWidth = cards[0].getBoundingClientRect().width;
+        const gap = 24; 
+        const moveDistance = currentIndex * (cardWidth + gap);
+
+        slidesContainer.style.transform = `translateX(-${moveDistance}px)`;
+
+        // 最初のページでの左ボタン制御
+        if (currentIndex === 0) {
+            prevBtn.classList.add('opacity-30', 'cursor-not-allowed');
+            prevBtn.style.pointerEvents = 'none';
+        } else {
+            prevBtn.classList.remove('opacity-30', 'cursor-not-allowed');
+            prevBtn.style.pointerEvents = 'auto';
+        }
+
+        // 最後のページでの右ボタン制御
+        if (currentIndex === maxIndex) {
+            nextBtn.classList.add('opacity-30', 'cursor-not-allowed');
+            nextBtn.style.pointerEvents = 'none';
+        } else {
+            nextBtn.classList.remove('opacity-30', 'cursor-not-allowed');
+            nextBtn.style.pointerEvents = 'auto';
+        }
+    }
+
+    // 次のスライドへ進む処理（自動再生とループ用）
+    function nextSlide() {
+        const visibleCount = getVisibleCount();
+        const maxIndex = totalCards - visibleCount;
+
+        if (currentIndex >= maxIndex) {
+            currentIndex = 0; // 最後まで行ったら最初に戻る
+        } else {
+            currentIndex++;
+        }
+        updateSlider();
+    }
+
+    // 自動再生を開始する関数（5000ms = 5秒ごとに移動）
+    function startAutoPlay() {
+        stopAutoPlay(); // 既存のタイマーの重複を防ぐ
+        autoPlayTimer = setInterval(nextSlide, 5000);
+    }
+
+    // 自動再生を一時停止する関数
+    function stopAutoPlay() {
+        if (autoPlayTimer) {
+            clearInterval(autoPlayTimer);
+        }
+    }
+
+    // ユーザー操作時はタイマーをリセットして再スタート
+    nextBtn.addEventListener('click', () => {
+        currentIndex++;
+        updateSlider();
+        startAutoPlay(); 
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex--;
+        updateSlider();
+        startAutoPlay();
+    });
+
+    // カルーセルにマウスが乗っている間は自動再生を止める（PC用親切設計）
+    const carouselContainer = slidesContainer.closest('.group');
+    carouselContainer.addEventListener('mouseenter', stopAutoPlay);
+    carouselContainer.addEventListener('mouseleave', startAutoPlay);
+
+    // 画面サイズ変更時のリサイズ対応
+    window.addEventListener('resize', () => {
+        updateSlider();
+    });
+
+    // 初期化実行
+    updateSlider();
+    startAutoPlay();
+});
+</script>
+
+
+
+
+
+    <section class="py-16 bg-slate-100" id="corporate">
+        <div class="max-w-4xl mx-auto px-4">
+             
+            <div class="text-center mb-10">
+                <span class="text-daikoYellow text-xs font-black tracking-widest uppercase block mb-1">Company Profile</span>
+                <h2 class="text-2xl font-black text-slate-900 border-b-4 border-daikoYellow inline-block pb-1">会社概要</h2>
+                <p class="text-xs text-slate-500 mt-3">中古ブランドの販売・通販、高価買取・査定の質屋を行っている大黒屋の会社概要です。</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-xs border border-slate-200 overflow-hidden text-xs md:text-sm mb-12">
+                <div class="divide-y divide-slate-200">
+                    <div class="grid grid-cols-1 md:grid-cols-4 p-4">
+                        <div class="font-bold text-slate-500 md:col-span-1">会社名</div>
+                        <div class="md:col-span-3 font-black text-slate-900">株式会社 大黒屋</div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 p-4">
+                        <div class="font-bold text-slate-500 md:col-span-1">創業</div>
+                        <div class="md:col-span-3 text-slate-800 font-medium">1947年（昭和22年）4月</div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 p-4">
+                        <div class="font-bold text-slate-500 md:col-span-1">資本金</div>
+                        <div class="md:col-span-3 text-slate-800 font-medium">318,095千円</div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 p-4">
+                        <div class="font-bold text-slate-500 md:col-span-1">決算日</div>
+                        <div class="md:col-span-3 text-slate-800 font-medium">3月31日</div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 p-4">
+                        <div class="font-bold text-slate-500 md:col-span-1">代表取締役</div>
+                        <div class="md:col-span-3 font-bold text-slate-900">代表取締役社長 島野　勝広</div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 p-4">
+                        <div class="font-bold text-slate-500 md:col-span-1">事業内容</div>
+                        <div class="md:col-span-3 text-slate-800 space-y-1 font-medium">
+                            <p>ブランド品（バッグ・時計・宝飾品等）、ジュエリー、洋服などの買取・販売</p>
+                            <p>質業</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 p-4">
+                        <div class="font-bold text-slate-500 md:col-span-1">本社所在地</div>
+                        <div class="md:col-span-3 text-slate-800 font-medium">東京都港区港南４－１－８</div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 p-4">
+                        <div class="font-bold text-slate-500 md:col-span-1">連絡先</div>
+                        <div class="md:col-span-3 text-slate-800 font-medium space-y-0.5">
+                            <p>TEL：03-3472-7740（代表）</p>
+                            <p>FAX：03-3472-7741</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-xs border border-slate-200 p-6 space-y-6 text-xs md:text-sm">
+                <div>
+                    <h3 class="text-sm font-black text-slate-900 border-b-2 border-daikoYellow pb-2 mb-3">営業許可</h3>
+                    <p class="text-slate-500">古物営業法および質屋営業法に基づく許可情報を掲載しています。</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <h4 class="font-bold text-slate-900 mb-1.5">■ 古物営業法に基づく許可（販売業務・買取業務）</h4>
+                        <p class="text-slate-800 font-medium pl-3">東京都公安委員会許可 第304360609123号</p>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <h4 class="font-bold text-slate-900 mb-2">■ 質屋営業法に基づく許可</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 pl-3 text-slate-700 font-medium">
+                            <div class="space-y-1">
+                                <p class="text-slate-400 font-bold text-[10px] uppercase tracking-wider">東京都公安委員会</p>
+                                <p>新宿本店 第304360606008号</p>
+                                <p>新宿二番館 第304360606009号</p>
+                                <p>渋谷店 第303310606004号</p>
+                                <p>上野店 第306600606005号</p>
+                                <p>池袋店 第305500606006号</p>
+                                <p>銀座店 第301060906008号</p>
+                                <p>麻布十番店 第301111102002号</p>
+                                <p>六本木店 第301111505004号</p>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="space-y-1">
+                                    <p class="text-slate-400 font-bold text-[10px] uppercase tracking-wider">千葉県公安委員会</p>
+                                    <p>船橋店 第441040000049号</p>
+                                    <p>成田店 第441110000009号</p>
+                                    <p>柏店 第441090000025号</p>
+                                    <p>千葉店 第441010000062号</p>
+                                </div>
+                                <div class="space-y-1">
+                                    <p class="text-slate-400 font-bold text-[10px] uppercase tracking-wider">埼玉県公安委員会</p>
+                                    <p>大宮店 第10600041号</p>
+                                </div>
+                                <div class="space-y-1">
+                                    <p class="text-slate-400 font-bold text-[10px] uppercase tracking-wider">神奈川県公安委員会</p>
+                                    <p>横浜店 第451370005298号</p>
+                                    <p>川崎店 第452500028451号</p>
+                                </div>
+                            </div>
+                            <div class="space-y-1 mt-2 md:mt-0">
+                                <p class="text-slate-400 font-bold text-[10px] uppercase tracking-wider">愛知県公安委員会</p>
+                                <p>名古屋大須店 第54116070010A号</p>
+                            </div>
+                            <div class="space-y-1 mt-2 md:mt-0">
+                                <p class="text-slate-400 font-bold text-[10px] uppercase tracking-wider">大阪府公安委員会</p>
+                                <p>大阪ミナミ店 第621111800013号</p>
+                                <p>心斎橋店 第621111800014号</p>
+                                <p>梅田店 第621011900012号</p>
+                            </div>
+                            <div class="space-y-1 mt-2 md:mt-0">
+                                <p class="text-slate-400 font-bold text-[10px] uppercase tracking-wider">兵庫県公安委員会</p>
+                                <p>神戸元町店 第631130800002号</p>
+                            </div>
+                            <div class="space-y-1 mt-2 md:mt-0">
+                                <p class="text-slate-400 font-bold text-[10px] uppercase tracking-wider">福岡県公安委員会</p>
+                                <p>福岡天神本館店 第901011630002号</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-daikoDark text-slate-400 text-[11px] py-12 border-t-4 border-daikoYellow">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left space-y-1">
+                <p class="text-slate-500 font-medium">&copy; DAIKOKUYA Co.,Ltd.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-slate-400 font-bold tracking-wider">
+                <a href="./shops.html" class="hover:text-daikoYellow transition-colors">店舗一覧</a>
+                <a href="#corporate" class="hover:text-daikoYellow transition-colors">会社概要</a>
+                <a href="./privacy.html" class="hover:text-daikoYellow transition-colors">プライバシーポリシー</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const path1 = document.getElementById('path1');
+        const path2 = document.getElementById('path2');
+        const path3 = document.getElementById('path3');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            const isOpen = mobileMenu.classList.toggle('open');
+             
+            if (isOpen) {
+                path1.setAttribute('d', 'M6 18L18 6');
+                path2.setAttribute('opacity', '0');
+                path3.setAttribute('d', 'M6 6l12 12');
+            } else {
+                path1.setAttribute('d', 'M4 6h16');
+                path2.removeAttribute('opacity');
+                path3.setAttribute('d', 'M4 18h16');
+            }
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mobileMenu.classList.contains('open')) {
+                    toggleMenu();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
